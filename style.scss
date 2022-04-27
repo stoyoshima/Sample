@@ -1,0 +1,59 @@
+@import url(kengaku.scss);
+
+$cwhite: white;
+$cBlack: black;
+$cBrown: #663300;
+$cYellow: yellow;
+
+
+.header {
+    color: $cwhite;
+    background-color: pink;
+    height: 100px;
+    text-align: center;
+    font-size: large;
+}
+
+.header-list li {
+    float: left;
+    list-style: none;
+    padding: 20px;
+    font-size: medium;
+    cursor: pointer;
+
+    &:hover {
+        color: $cBrown;
+    }
+}
+
+a {
+    color: $cwhite;
+}
+
+.top-phot {
+    height: 450px;
+    width: 464px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.top-img {
+    height: 250px;
+    margin: 0 auto;
+}
+
+.fotter {
+    color: $cwhite;
+    background-color: pink;
+    height: 150px;
+    text-align: center;
+    font-size: large;
+}
+
+.fotter-list li {
+    list-style: none;
+    padding: 0;
+    font-size: medium;
+    cursor: pointer;
+    
+}

@@ -1,0 +1,42 @@
+@import url(style.scss);
+
+.form-box {
+        margin: 100px 100px;
+}
+.fm01 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 1200px;
+    height: 100px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid pink;
+}
+.fm02 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 1200px;
+    height: 100px;
+    margin-top: 32px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid pink;
+}
+.name1 {
+    width: 400px;
+}
+span.his {
+    color: red;
+    padding-right: 30px;
+}
+.hisx {
+    padding-right: 30px;
+    color: gray;
+}
+.span {
+    font-size: 30px;
+}
+span.deta {
+    font-size: 25px;
+}
+.text {
+    width: 800px;
+}

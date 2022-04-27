@@ -1,0 +1,52 @@
+@import url(kengaku.scss);
+.header {
+  color: white;
+  background-color: pink;
+  height: 100px;
+  text-align: center;
+  font-size: large;
+}
+
+.header-list li {
+  float: left;
+  list-style: none;
+  padding: 20px;
+  font-size: medium;
+  cursor: pointer;
+}
+
+.header-list li:hover {
+  color: #663300;
+}
+
+a {
+  color: white;
+}
+
+.top-phot {
+  height: 450px;
+  width: 464px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.top-img {
+  height: 250px;
+  margin: 0 auto;
+}
+
+.fotter {
+  color: white;
+  background-color: pink;
+  height: 150px;
+  text-align: center;
+  font-size: large;
+}
+
+.fotter-list li {
+  list-style: none;
+  padding: 0;
+  font-size: medium;
+  cursor: pointer;
+}
+/*# sourceMappingURL=style.css.map */
