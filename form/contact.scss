@@ -15,7 +15,7 @@
     margin-top: 32px;
 }
 .name1 {
-    width: 400px;
+    width: 600px;
     border-bottom: 2px solid pink;
 }
 span.his {
@@ -31,12 +31,13 @@ span.his {
 }
 span.deta {
     font-size: 25px;
+    padding-right: 30px;
 }
 .text {
     width: 200px;
     border-bottom: 2px solid pink;
 }
-.form-box button {
+.botton-k {
     height: 40px;
     width: 110px;
     cursor: pointer;  
@@ -55,7 +56,33 @@ span.deta {
         border: 2px solid pink;
     }
 }
+.botton-b {
+    height: 40px;
+    width: 110px;
+    cursor: pointer;  
+    font-family: 'Yomogi', cursive;
+    background-color: white;
+    border-radius: 15px;
+    color: #bae9eb;
+    border: 2px solid #bae9eb; 
+    margin-top: 60px;
+
+    &:hover {
+        color: white;
+        transition: background-color 0.5s;
+        font-weight: bolder;
+        background-color: #bae9eb;
+        border: 2px solid #bae9eb;
+    }
+}
 .bottom {
     display: flex;
     justify-content: center;
+}
+.header1 {
+    background: url(../images/bg-header.png) center / cover;
+}
+.fotter {
+    height: 260px;
+    background: url(../images/bg-footer.png) center / cover;
 }

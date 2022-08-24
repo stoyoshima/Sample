@@ -1,0 +1,60 @@
+@import url(styles.css);
+.main-title-g {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: 'Yomogi', cursive;
+  color: #a1ddf9;
+  margin-top: 75px;
+}
+
+.section {
+  margin: 80px 10px;
+  position: relative;
+}
+
+.kumo02 {
+  position: absolute;
+  padding: 250px 10px 0px 85px;
+  width: 17%;
+  z-index: 1;
+}
+
+.kumo03 {
+  position: absolute;
+  width: 17%;
+  padding-left: 1200px;
+}
+
+.main01 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 460px;
+}
+
+.main01-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 5px;
+}
+
+.aprl {
+  width: 130px;
+}
+
+.aprl-list {
+  width: 300px;
+  padding: 0 10px;
+}
+
+.text_img {
+  width: 9%;
+  vertical-align: middle;
+  padding-left: 10px;
+}
+/*# sourceMappingURL=gyouji.css.map */

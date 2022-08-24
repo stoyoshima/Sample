@@ -20,7 +20,7 @@
 }
 
 .name1 {
-  width: 400px;
+  width: 600px;
   border-bottom: 2px solid pink;
 }
 
@@ -40,6 +40,7 @@ span.his {
 
 span.deta {
   font-size: 25px;
+  padding-right: 30px;
 }
 
 .text {
@@ -47,7 +48,7 @@ span.deta {
   border-bottom: 2px solid pink;
 }
 
-.form-box button {
+.botton-k {
   height: 40px;
   width: 110px;
   cursor: pointer;
@@ -59,13 +60,34 @@ span.deta {
   margin-top: 60px;
 }
 
-.form-box button:hover {
+.botton-k:hover {
   color: white;
   -webkit-transition: background-color 0.5s;
   transition: background-color 0.5s;
   font-weight: bolder;
   background-color: pink;
   border: 2px solid pink;
+}
+
+.botton-b {
+  height: 40px;
+  width: 110px;
+  cursor: pointer;
+  font-family: 'Yomogi', cursive;
+  background-color: white;
+  border-radius: 15px;
+  color: #bae9eb;
+  border: 2px solid #bae9eb;
+  margin-top: 60px;
+}
+
+.botton-b:hover {
+  color: white;
+  -webkit-transition: background-color 0.5s;
+  transition: background-color 0.5s;
+  font-weight: bolder;
+  background-color: #bae9eb;
+  border: 2px solid #bae9eb;
 }
 
 .bottom {
@@ -76,4 +98,13 @@ span.deta {
       -ms-flex-pack: center;
           justify-content: center;
 }
-/*# sourceMappingURL=kengaku.css.map */
+
+.header1 {
+  background: url(../images/bg-header.png) center/cover;
+}
+
+.fotter {
+  height: 260px;
+  background: url(../images/bg-footer.png) center/cover;
+}
+/*# sourceMappingURL=contact.css.map */

@@ -1,0 +1,33 @@
+@import url(styles.css);
+@import url(gyouji.css);
+
+
+
+
+.table {
+    display: flex;
+    justify-content: center;
+    height: 1000px;
+    text-align: center;
+    border-collapse: separate;
+    border: solid 4px white;
+    border-radius: 20%;
+}
+.time {
+    background-color: #fff271;
+}
+.time0 {
+    background-color: #fff27166;
+}
+.baby {
+    background-color: #ffc0cb69;
+}
+.child {
+    background-color: #87ceeb54;
+}
+.infant {
+    background-color: #d9f0b2;
+}
+.same {
+    background-color: #ffab4738;
+}

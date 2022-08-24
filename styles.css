@@ -1,0 +1,262 @@
+@import url(gyouji.css);
+@import url(slider.js);
+.swiper {
+  width: 50%;
+  height: 400px;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  border-top-right-radius: 25%;
+  border-top-left-radius: 25%;
+}
+
+.header1 {
+  background: url(/images/bg-header.png) center/cover;
+}
+
+.header {
+  height: 136px;
+  font-family: 'Yomogi', cursive;
+}
+
+.header-title h1 {
+  padding-top: 42px;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+a {
+  text-decoration: none;
+  color: darkslategrey;
+}
+
+a.saiyou {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+  padding-right: 100px;
+}
+
+.header-list01 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-weight: 600;
+}
+
+.header-list li {
+  list-style: none;
+  padding: 0 30px;
+  font-size: medium;
+  cursor: pointer;
+  font-family: 'Yomogi', cursive;
+}
+
+.header-list li:hover {
+  color: #a1ddf9;
+}
+
+section {
+  margin: 20px;
+}
+
+.containter {
+  padding: 90px 20px;
+  position: relative;
+  width: 100%;
+  height: 400px;
+}
+
+.kumo01 {
+  position: absolute;
+  padding: 80px 10px 0px 10px;
+  width: 13%;
+}
+
+.kumo02 {
+  position: absolute;
+  padding: 250px 10px 0px 290px;
+  width: 17%;
+  z-index: 2;
+}
+
+.tori {
+  position: absolute;
+  margin: 30px 0px 0px 985px;
+  width: 11%;
+  z-index: 2;
+  padding: 110px;
+}
+
+.main-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 95px 20px;
+}
+
+.title01, .title02, .title03 {
+  width: 500px;
+  padding: 35px;
+  height: 495px;
+  text-align: center;
+  margin: 5px 10px;
+  border-top-left-radius: 20%;
+  border-top-right-radius: 20%;
+}
+
+.title01 {
+  background-color: beige;
+}
+
+.title02 {
+  background-color: #ffc0cb5e;
+}
+
+.title03 {
+  background-color: #87ceeb40;
+}
+
+.title01-list-1 h1 {
+  color: white;
+  margin-left: 80px;
+  margin-right: 80px;
+  border-radius: 16px;
+}
+
+.h1-1 {
+  background-color: #ffa500cc;
+}
+
+.h1-2 {
+  background-color: palevioletred;
+}
+
+.h1-3 {
+  background-color: skyblue;
+}
+
+img.title01-phot {
+  width: 90%;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+  border-radius: 10%;
+}
+
+img.title01-phot:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+ul.title01-list {
+  display: inline-block;
+  text-align: left;
+  list-style-position: inside;
+  padding: 0;
+}
+
+.main-title h1 {
+  font-family: 'Yomogi', cursive;
+}
+
+.title01-list-1 {
+  height: 175px;
+}
+
+.title-button01, .title-button02, .title-button03 {
+  padding: 10px 30px;
+  font-family: 'Yomogi', cursive;
+  background-color: white;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.title-button01:hover, .title-button02:hover, .title-button03:hover {
+  color: white;
+  -webkit-transition: background-color 0.5s;
+  transition: background-color 0.5s;
+  font-weight: bolder;
+}
+
+.title-button01 {
+  color: #ffa500cc;
+  border: 2px solid #ffa500cc;
+}
+
+.title-button01:hover {
+  background-color: #ffa500cc;
+  border: 2px solid #ffa500cc;
+}
+
+.title-button02 {
+  color: palevioletred;
+  border: 2px solid palevioletred;
+}
+
+.title-button02:hover {
+  background-color: palevioletred;
+  border: 2px solid palevioletred;
+}
+
+.title-button03 {
+  color: skyblue;
+  border: 2px solid skyblue;
+}
+
+.title-button03:hover {
+  background-color: skyblue;
+  border: 2px solid skyblue;
+}
+
+.fotter {
+  height: 260px;
+  background: url(/images/bg-footer.png) center/cover;
+}
+
+.list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+}
+
+.fotter-title h1 {
+  font-family: 'Yomogi', cursive;
+  padding: 0 400px;
+  letter-spacing: -0.25em;
+  margin: auto;
+}
+
+.list li {
+  list-style: none;
+  font-size: medium;
+}
+
+.fotter-list01 {
+  margin-right: 522px;
+}
+
+.fotter-list02 li {
+  padding-bottom: 5px;
+}
+/*# sourceMappingURL=styles.css.map */
