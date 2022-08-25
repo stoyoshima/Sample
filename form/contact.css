@@ -20,7 +20,7 @@
 }
 
 .name1 {
-  width: 600px;
+  width: 630px;
   border-bottom: 2px solid pink;
 }
 
@@ -38,9 +38,13 @@ span.his {
   font-size: 30px;
 }
 
-span.deta {
+.deta {
   font-size: 25px;
   padding-right: 30px;
+}
+
+.deta2 {
+  font-size: 10px;
 }
 
 .text {

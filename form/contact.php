@@ -96,23 +96,20 @@ if(!empty($_POST['btn_submit'])){
     <form method="POST" action="contact.php" class="form-box">
         <div class="fm-box">
             <div class="fm01">
-                <div class="name1">
-                    <span class="his">必須</span>
-                    <span class="deta">お名前</span>
+                <div class="name1">          
+                    <div class="deta"><span class="his">必須</span>お名前</div>
                     <input type="text" name="your_name" placeholder="太子堂はなこ" value="<?php if(isset($_POST['your_name'])){echo h($_POST['your_name']);} ?>">
                 </div>
             </div>
             <div class="fm02">
                 <div class="name1">
-                    <span class="his">必須</span>
-                    <span class="deta">電話番号</span>
+                    <div class="deta"><span class="his">必須</span>電話番号</div>
                     <input type="text" name="tel" placeholder="08043215678" value="<?php if(isset($_POST['tel'])){echo h($_POST['tel']);} ?>">
                 </div>
             </div>
             <div class="fm02">
                 <div class="name1">
-                    <span class="his">必須</span>
-                    <span class="deta">見学希望日時</span>
+                    <div class="deta"><span class="his">必須</span>見学希望日時</div>
                     <input type="date" name="day" value="<?php if(isset($_POST['day'])){echo h($_POST['day']);} ?>">
                     <select name="time">
                         <option value="">選択してください</option>
@@ -125,20 +122,21 @@ if(!empty($_POST['btn_submit'])){
             </div>
             <div class="fm02">
                 <div class="name1">
-                    <span class="hisx">任意</span>
-                    <span class="deta">お子様年齢</span>
+                    <div class="deta"><span class="his">必須</span>お子様年齢</div>
+                    <div class="deta2">※現在、妊娠中または見学のみの方はその他を選択してください</div>
                     <input type="checkbox" name="ages[]" value="0歳">0歳
                     <input type="checkbox" name="ages[]" value="1歳">1歳
                     <input type="checkbox" name="ages[]" value="2歳">2歳
                     <input type="checkbox" name="ages[]" value="3歳">3歳
                     <input type="checkbox" name="ages[]" value="4歳">4歳
                     <input type="checkbox" name="ages[]" value="5歳">5歳
+                    <input type="checkbox" name="ages[]" value="妊娠中">妊娠中
+                    <input type="checkbox" name="ages[]" value="その他">その他
                 </div>
             </div>
             <div class="fm02">
                 <div class="name1">
-                    <span class="hisx">任意</span>
-                    <span class="deta">ご相談</span>
+                    <div class="deta"><span class="hisx">任意</span>ご相談</div>
                     <textarea name="contact" id="" cols="30" rows="3" >
                         <?php if(isset($_POST['contact'])){echo h($_POST['contact']);} ?>
                     </textarea>
@@ -201,7 +199,7 @@ if(!empty($_POST['btn_submit'])){
         
                         $age = [];
                         $age[] = $ages;
-                        ?>        】
+                        ?>   】
                    
                    <!-- <?php var_dump($age);?> -->
                    <input type="hidden" name="ages" value="<?php echo $ages ; ?>">
@@ -209,6 +207,7 @@ if(!empty($_POST['btn_submit'])){
                 </div>
                 <div class="fm01">
                     ご相談内容【<?php echo h($_POST['contact']) ; ?>】
+                        
                     
                     <input type="hidden" name="contact" value="<?php echo h($_POST['contact']) ; ?>">
                 </div>

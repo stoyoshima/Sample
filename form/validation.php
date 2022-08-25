@@ -17,6 +17,10 @@
         $errors[] = '見学希望時間を選択してください。';
     }
 
+    if(empty($request['ages'])){
+        $errors[] = '現在のお子さまの年齢または該当するものを選択してください。';
+    }
+
     return $errors;
 };
 ?>
