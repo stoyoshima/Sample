@@ -45,28 +45,28 @@ if(!empty($_POST['btn_submit'])){
 <body>
 
 <header class="header1">
-        <div class="header">
-            <div class="header-title">
-                <h1 class="h1">
-                    <span style="color: rgb(255 150 152 / 64%)">太</span>
-                    <span style="color: #fff271">子</span>
-                    <span style="color: #bae9eb">堂</span>
-                    <span style="color: rgb(255 150 152 / 64%)">保</span>
-                    <span style="color: #bae9eb">育</span>
-                    <span style="color: #fff271">園</span>
-                </h1>
-                <a href="" class="saiyou">◂採用情報</a>
-            </div>
-            <div class="header-list">
-                <ul class="header-list01">
-                    <a href="Sample01.html"><li><img src="../images/icons8-ばら-40.png" alt="">保育園紹介</li></a>
-                    <a href="time schedule.html"><li><img src="../images/icons8-ナッツ-40.png" alt="">保育園の一日</li></a>
-                    <a href="gyouji.html"><li><img src="../images/icons8-チェリー-40.png" alt="">年間行事</li></a>
-                    <a href="http://localhost/Sample/form/contact.php"><li><img src="../images/icons8-オークリーフ-40.png" alt="">保育園見学</li></a>
-                </ul>
-            </div>
+    <div class="header">
+        <div class="header-title">
+            <h1 class="h1">
+                <span style="color: rgb(255 150 152 / 64%)">太</span>
+                <span style="color: #fff271">子</span>
+                <span style="color: #bae9eb">堂</span>
+                <span style="color: rgb(255 150 152 / 64%)">保</span>
+                <span style="color: #bae9eb">育</span>
+                <span style="color: #fff271">園</span>
+            </h1>
+            <a href="" class="saiyou">◂採用情報</a>
         </div>
-    </header>
+        <div class="header-list">
+            <ul class="header-list01">
+                <a href="Sample01.html"><li><img src="../images/icons8-ばら-40.png" alt="">保育園紹介</li></a>
+                <a href="time schedule.html"><li><img src="../images/icons8-ナッツ-40.png" alt="">保育園の一日</li></a>
+                <a href="gyouji.html"><li><img src="../images/icons8-チェリー-40.png" alt="">年間行事</li></a>
+                <a href="http://localhost/Sample/form/contact.php"><li><img src="../images/icons8-オークリーフ-40.png" alt="">保育園見学</li></a>
+            </ul>
+        </div>
+    </div>
+</header>
 
     <div class="main-title-g">
         <h1>保育園見学申し込み</h1>
@@ -97,49 +97,83 @@ if(!empty($_POST['btn_submit'])){
         <div class="fm-box">
             <div class="fm01">
                 <div class="name1">          
-                    <div class="deta"><span class="his">必須</span>お名前</div>
-                    <input type="text" name="your_name" placeholder="太子堂はなこ" value="<?php if(isset($_POST['your_name'])){echo h($_POST['your_name']);} ?>">
+                    <div class="deta">
+                        <span class="his">必須</span>お名前
+                    </div>
+                    <div class="input_box">
+                        <input class="input" type="text" name="your_name" placeholder="太子堂はなこ" value="<?php if(isset($_POST['your_name'])){echo h($_POST['your_name']);} ?>">
+                    </div>
                 </div>
             </div>
             <div class="fm02">
                 <div class="name1">
-                    <div class="deta"><span class="his">必須</span>電話番号</div>
-                    <input type="text" name="tel" placeholder="08043215678" value="<?php if(isset($_POST['tel'])){echo h($_POST['tel']);} ?>">
+                    <div class="deta">
+                        <span class="his">必須</span>電話番号
+                    </div>
+                    <div class="input_box">
+                        <input class="input" type="text" name="tel" placeholder="08043215678" value="<?php if(isset($_POST['tel'])){echo h($_POST['tel']);} ?>">
+                    </div>
                 </div>
             </div>
             <div class="fm02">
                 <div class="name1">
-                    <div class="deta"><span class="his">必須</span>見学希望日時</div>
-                    <input type="date" name="day" value="<?php if(isset($_POST['day'])){echo h($_POST['day']);} ?>">
-                    <select name="time">
-                        <option value="">選択してください</option>
-                        <option value="10:00~11:00" 
-                            <?php if(isset($_POST['time']) && $_POST['time'] === '10:00~11:00' ){ echo 'selected'; } ?>>10:00~11:00</option>
-                        <option value="15:00~16:00" 
-                            <?php if(isset($_POST['time']) && $_POST['time'] === '15:00~16:00'){echo 'selected';}?>>15:00~16:00</option>
-                    </select>
+                    <div class="deta">
+                        <span class="his">必須</span>見学希望日時
+                    </div>
+                    <div class="input_box">
+                        <input class="input" type="date" name="day" value="<?php if(isset($_POST['day'])){echo h($_POST['day']);} ?>">
+                        <select class="input" name="time">
+                            <option value="">選択してください</option>
+                            <option value="10:00~11:00" 
+                                <?php if(isset($_POST['time']) && $_POST['time'] === '10:00~11:00' ){ echo 'selected'; } ?>>10:00~11:00</option>
+                            <option value="15:00~16:00" 
+                                <?php if(isset($_POST['time']) && $_POST['time'] === '15:00~16:00'){echo 'selected';}?>>15:00~16:00</option>
+                        </select>
+                    </div>
                 </div>
             </div>
             <div class="fm02">
                 <div class="name1">
-                    <div class="deta"><span class="his">必須</span>お子様年齢</div>
-                    <div class="deta2">※現在、妊娠中または見学のみの方はその他を選択してください</div>
-                    <input type="checkbox" name="ages[]" value="0歳">0歳
-                    <input type="checkbox" name="ages[]" value="1歳">1歳
-                    <input type="checkbox" name="ages[]" value="2歳">2歳
-                    <input type="checkbox" name="ages[]" value="3歳">3歳
-                    <input type="checkbox" name="ages[]" value="4歳">4歳
-                    <input type="checkbox" name="ages[]" value="5歳">5歳
-                    <input type="checkbox" name="ages[]" value="妊娠中">妊娠中
-                    <input type="checkbox" name="ages[]" value="その他">その他
+                    <div class="deta">
+                        <span class="his">必須</span>お子様年齢
+                    </div>
+                    <div class="input_box">
+                        <label>
+                            <input type="checkbox" name="ages[]" value="1歳">1歳
+                        </label>
+                        <label>
+                            <input type="checkbox" name="ages[]" value="0歳">0歳
+                        </label>
+                        <label>
+                            <input type="checkbox" name="ages[]" value="2歳">2歳
+                        </label>
+                        <label>
+                            <input type="checkbox" name="ages[]" value="3歳">3歳
+                        </label>
+                        <label>
+                            <input type="checkbox" name="ages[]" value="4歳">4歳
+                        </label>
+                        <label>
+                            <input type="checkbox" name="ages[]" value="5歳">5歳
+                        </label>
+                        <label>
+                            <input type="checkbox" name="ages[]" value="妊娠中">妊娠中
+                        </label>
+                        <label>
+                            <input type="checkbox" name="ages[]" value="その他">その他
+                            <p>※現在、妊娠中または見学のみの方はその他を選択してください</p>
+                        </label>
+                    </div>
                 </div>
             </div>
-            <div class="fm02">
+            <div class="fm03">
                 <div class="name1">
-                    <div class="deta"><span class="hisx">任意</span>ご相談</div>
-                    <textarea name="contact" id="" cols="30" rows="3" >
-                        <?php if(isset($_POST['contact'])){echo h($_POST['contact']);} ?>
-                    </textarea>
+                    <div class="deta">
+                        <span class="hisx">任意</span>ご相談
+                    </div>
+                    <div class="input_box">
+                        <textarea name="contact" id="" cols="30" rows="3" ><?php if(isset($_POST['contact'])){echo h($_POST['contact']);} ?></textarea>
+                    </div>
                 </div>
             </div>
             <div class="bottom">
