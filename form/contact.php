@@ -59,7 +59,7 @@ if(!empty($_POST['btn_submit'])){
         </div>
         <div class="header-list">
             <ul class="header-list01">
-                <a href="Sample01.html"><li><img src="../images/icons8-ばら-40.png" alt="">保育園紹介</li></a>
+                <a href="index.html"><li><img src="../images/icons8-ばら-40.png" alt="">保育園紹介</li></a>
                 <a href="time schedule.html"><li><img src="../images/icons8-ナッツ-40.png" alt="">保育園の一日</li></a>
                 <a href="gyouji.html"><li><img src="../images/icons8-チェリー-40.png" alt="">年間行事</li></a>
                 <a href="http://localhost/Sample/form/contact.php"><li><img src="../images/icons8-オークリーフ-40.png" alt="">保育園見学</li></a>
@@ -121,7 +121,7 @@ if(!empty($_POST['btn_submit'])){
                         <span class="his">必須</span>見学希望日時
                     </div>
                     <div class="input_box">
-                        <input class="input" type="date" name="day" value="<?php if(isset($_POST['day'])){echo h($_POST['day']);} ?>">
+                        <input class="input" type="date" name="day" value="2022-08-10"<?php if(isset($_POST['day'])){echo h($_POST['day']);} ?>>
                         <select class="input" name="time">
                             <option value="">選択してください</option>
                             <option value="10:00~11:00" 
@@ -293,7 +293,7 @@ if(!empty($_POST['btn_submit'])){
         </div>
         <div class="fotter-list02">
             <ul>
-                <a href="Sample01.html"><li>保育園紹介</li></a>
+                <a href="index.html"><li>保育園紹介</li></a>
                 <a href="time schedule.html"><li>保育園の一日</li></a>
                 <a href="gyouji.html"><li>年間行事</li></a>
                 <a href="http://localhost/Sample/form/contact.php"><li>保育園見学</li></a>
