@@ -1,6 +1,15 @@
 @import url(styles.css);
 @import url(gyouji.css);
 
+.error {
+    display: flex;
+    justify-content: center
+}
+.confirmation {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
 .form-box {
     margin: 20px 100px;
     display: flex;
@@ -59,9 +68,22 @@ label p {
     width: 200px;
     border-bottom: 2px solid pink;
 }
+.bottom_send {
+    display: table; width: 100%;
+}
+.send {
+    display: table-cell; 
+    text-align: center; 
+    width: 74%;
+    padding-left: 25%;
+}
+.back {
+    display: table-cell;
+    text-align: left;
+}
 .botton-k {
     height: 40px;
-    width: 110px;
+    width: 185px;
     cursor: pointer;  
     font-family: 'Yomogi', cursive;
     background-color: white;
@@ -80,7 +102,7 @@ label p {
 }
 .botton-b {
     height: 40px;
-    width: 110px;
+    width: 75px;
     cursor: pointer;  
     font-family: 'Yomogi', cursive;
     background-color: white;
@@ -88,6 +110,7 @@ label p {
     color: #bae9eb;
     border: 2px solid #bae9eb; 
     margin-top: 60px;
+    margin-left: 35px;
 
     &:hover {
         color: white;
@@ -107,4 +130,7 @@ label p {
 .fotter {
     height: 260px;
     background: url(../images/bg-footer.png) center / cover;
+}
+.fotter-list02 :hover {
+    color: cornflowerblue;
 }

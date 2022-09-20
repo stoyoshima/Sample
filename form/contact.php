@@ -40,7 +40,7 @@ if(!empty($_POST['btn_submit'])){
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Yomogi&display=swap" rel="stylesheet">
-    <title>Document</title>
+    <title>保育園見学予約フォーム</title>
 </head>
 <body>
 
@@ -59,9 +59,9 @@ if(!empty($_POST['btn_submit'])){
         </div>
         <div class="header-list">
             <ul class="header-list01">
-                <a href="index.html"><li><img src="../images/icons8-ばら-40.png" alt="">保育園紹介</li></a>
-                <a href="time schedule.html"><li><img src="../images/icons8-ナッツ-40.png" alt="">保育園の一日</li></a>
-                <a href="gyouji.html"><li><img src="../images/icons8-チェリー-40.png" alt="">年間行事</li></a>
+                <a href="http://127.0.0.1:5500/index.html"><li><img src="../images/icons8-ばら-40.png" alt="">保育園紹介</li></a>
+                <a href="http://127.0.0.1:5500/time_schedule.html"><li><img src="../images/icons8-ナッツ-40.png" alt="">保育園の一日</li></a>
+                <a href="http://127.0.0.1:5500/gyouji.html"><li><img src="../images/icons8-チェリー-40.png" alt="">年間行事</li></a>
                 <a href="http://localhost/Sample/form/contact.php"><li><img src="../images/icons8-オークリーフ-40.png" alt="">保育園見学</li></a>
             </ul>
         </div>
@@ -84,15 +84,19 @@ if(!empty($_POST['btn_submit'])){
     }
     $token = $_SESSION['csrfToken'];
     ?>
-    <!-- エラー表示 -->
-    <?php if(!empty($errors) && !empty($_POST['btn_confirm'])) : ?>
-        <?php echo '<ul>' ;?>
-            <?php foreach($errors as $error){
-                echo '<li>' . $error . '</li>';
-            }?>
-        <?php echo '</ul>' ;?>
-    <?php endif; ?>
 
+<!-- エラー表示 -->
+<div class="error">
+    <div>
+        <?php if(!empty($errors) && !empty($_POST['btn_confirm'])) : ?>
+            <?php echo '<ul>' ;?>
+                <?php foreach($errors as $error){
+                    echo '<li>' . $error . '</li>';
+                }?>
+        <?php echo '</ul>' ;?>
+        <?php endif; ?>
+    </div>
+</div>
     <form method="POST" action="contact.php" class="form-box">
         <div class="fm-box">
             <div class="fm01">
@@ -188,8 +192,8 @@ if(!empty($_POST['btn_submit'])){
 <!-- 確認画面 -->
 <?php if($pageFlag === 1) : ?>
     <?php if($_POST['csrf'] === $_SESSION['csrfToken']):?>
-        <form method="POST" action="contact.php">
-            <div class="fm-box">
+        <form method="POST" action="contact.php" class="confirmation">
+            <div class="">
                 <div class="fm01">
                     お名前【 <?php echo h($_POST['your_name']) ; ?>】
                    
@@ -262,7 +266,7 @@ if(!empty($_POST['btn_submit'])){
         <?php require '../mainte/insert.php';
         insertContact($_POST);
         ?>
-         <div class="fm-box">
+        <div class="confirmation">
             <div class="fm01">
                 予約が完了しました<br>
                 キャンセルや日程変更の際には、ご連絡ください
@@ -293,9 +297,9 @@ if(!empty($_POST['btn_submit'])){
         </div>
         <div class="fotter-list02">
             <ul>
-                <a href="index.html"><li>保育園紹介</li></a>
-                <a href="time schedule.html"><li>保育園の一日</li></a>
-                <a href="gyouji.html"><li>年間行事</li></a>
+                <a href="http://127.0.0.1:5500/index.html"><li>保育園紹介</li></a>
+                <a href="http://127.0.0.1:5500/time_schedule.html"><li>保育園の一日</li></a>
+                <a href="http://127.0.0.1:5500/gyouji.html"><li>年間行事</li></a>
                 <a href="http://localhost/Sample/form/contact.php"><li>保育園見学</li></a>
             </ul>
         </div>
