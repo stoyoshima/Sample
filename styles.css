@@ -14,7 +14,7 @@ img {
 }
 
 .header1 {
-  background: url(/images/bg-header.png) center/cover;
+  background: url(https://github.com/stoyoshima/Sample/blob/main/images/asobi.png) center/cover;
 }
 
 .header {
@@ -258,8 +258,12 @@ ul.title01-list {
 .fotter-list02 li {
   padding-bottom: 5px;
 }
+<<<<<<< HEAD
 
 .fotter-list02 :hover {
   color: cornflowerblue;
 }
 /*# sourceMappingURL=styles.css.map */
+=======
+/*# sourceMappingURL=styles.css.map */
+>>>>>>> 88933f2a11503355860c4b66935f024104b5099e
